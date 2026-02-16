@@ -74,6 +74,27 @@
         background-color:var(--secondary-color);
         align-items: center; text-align: center;
       }
+      .slider{
+        width:100% ;
+        overflow: hidden;
+        position: relative;
+
+      }
+      .slide-track{
+        display: flex;
+        width: calc(250px*5);
+        animation:scroll 20s linear infinite ;
+
+      }
+      .slide>.slide-track>img{
+        width: 250px;
+        height: auto;
+
+      }
+      @keyframes scroll{
+        0%{transform: translateX(0);}
+        100%{transform:translateX(calc(-255px*5px*6));}
+      }
       
       
     </style>
@@ -230,11 +251,27 @@
         </div>
   </div>
 </section>
-   <footer class="p-3">
-    <img class="img" src="assets/images/micro.png" alt="logo">
+   <footer class="p-3 m-5">
+    <img class="img" src="PAUL/assets/images/one.png" alt="logo">
     <p> ABOUT BLOG FAQs</p> 
-    <p>@2025 microverse Enterprices .All rigths preserved</p>
+    <p>&copy 2025 microverse Enterprices .All rigths preserved</p>
   </footer>
+  <div class="slider">
+    <div class="slide-track">
+      
+      <img src="assets/images/micro.png" alt="">
+      <img src="assets/images/micro.png" alt="">
+      <img src="assets/images/micro.png" alt="">
+      <img src="assets/images/micro.png" alt="">
+      <img src="assets/images/micro.png" alt="">
+      <img src="assets/images/micro.png" alt="">
+      <img src="assets/images/micro.png" alt="">
+     
+
+
+    </div>
+
+  </div>
 
 
 
